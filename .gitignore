@@ -8,16 +8,6 @@ __pycache__/
 venv/
 ENV/
 
-# Data
-data/
-datasets/
-
-# Experiments and logs
-experiments/
-*.log
-runs/
-wandb/
-
 # IDE
 .idea/
 .vscode/

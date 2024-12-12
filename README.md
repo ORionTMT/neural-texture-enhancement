@@ -2,15 +2,6 @@
 
 A deep learning based solution for enhancing game texture quality. This project aims to generate high-fidelity textures from low-resolution inputs using multi-view consistent neural networks.
 
-## Features
-
-- Multi-modal input processing (RGB, Depth, Normal, UV maps)
-- Multi-view consistent texture generation
-- Progressive upsampling architecture
-- Transformer-based feature enhancement
-- Compatible with existing game development pipelines
-
-## Installation
 
 1. Clone the repository:
 ```bash
@@ -18,37 +9,7 @@ git clone https://github.com/yourusername/neural-texture-enhancement.git
 cd neural-texture-enhancement
 ```
 
-2. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-.\venv\Scripts\activate  # Windows
-```
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Project Structure
-
-```
-neural-texture-enhancement/
-├── configs/                  # Configuration files
-│   └── texture_enhancement.yml
-├── texture_enhancement/      # Core implementation
-│   ├── archs/               # Network architectures
-│   │   └── texture_net.py
-│   └── data/                # Data processing
-│       └── texture_dataset.py
-├── scripts/                 # Training scripts
-│   └── train.py
-├── data/                    # Dataset directory
-│   ├── raw/                 # Raw game screenshots
-│   └── processed/           # Processed data
-└── experiments/             # Training outputs
-```
 
 ## Data Preparation
 
@@ -85,19 +46,6 @@ python scripts/train.py
 ```bash
 tensorboard --logdir experiments/texture_enhancement_v1
 ```
-
-## Model Architecture
-
-The network consists of:
-- Multi-modal encoder
-- Feature transformation with attention mechanisms
-- Progressive upsampling decoder
-
-Key components:
-- Multi-view cross attention
-- Deformable self attention
-- Skip connections
-- Progressive generation
 
 ## Results
 ...
